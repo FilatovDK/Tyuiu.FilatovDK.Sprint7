@@ -68,6 +68,7 @@
             chartDiag_FDK.Size = new Size(418, 346);
             chartDiag_FDK.TabIndex = 1;
             chartDiag_FDK.Text = "chart1";
+            chartDiag_FDK.Click += chartDiag_FDK_Click;
             // 
             // buttonEnter_FDK
             // 

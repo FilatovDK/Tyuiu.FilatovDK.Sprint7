@@ -60,6 +60,11 @@ namespace Tyuiu.FilatovDK.Sprint7.Project.V13
         {
 
         }
+
+        private void chartDiag_FDK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
