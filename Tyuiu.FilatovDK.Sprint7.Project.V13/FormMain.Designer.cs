@@ -34,14 +34,14 @@
             saveFileDialog_FDK = new SaveFileDialog();
             toolTipButton_FDK = new ToolTip(components);
             buttonInformation_FDK = new Button();
-            dataGridViewInfo_FDK = new DataGridView();
-            textBoxWriteCountry_FDK = new TextBox();
-            groupBoxInPut_FDK = new GroupBox();
             buttonAddCountry_FDK = new Button();
             buttonDeleteCountry_FDK = new Button();
             buttonSearch_FDK = new Button();
-            buttonUpdate_FDK = new Button();
             buttonStatistics_FDK = new Button();
+            dataGridViewInfo_FDK = new DataGridView();
+            textBoxWriteCountry_FDK = new TextBox();
+            groupBoxInPut_FDK = new GroupBox();
+            buttonRed_FDK = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewInfo_FDK).BeginInit();
             groupBoxInPut_FDK.SuspendLayout();
             SuspendLayout();
@@ -49,7 +49,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(289, 9);
+            label1.Location = new Point(337, 9);
             label1.Name = "label1";
             label1.Size = new Size(146, 15);
             label1.TabIndex = 2;
@@ -62,7 +62,7 @@
             // 
             // buttonInformation_FDK
             // 
-            buttonInformation_FDK.Location = new Point(455, 12);
+            buttonInformation_FDK.Location = new Point(505, 12);
             buttonInformation_FDK.Name = "buttonInformation_FDK";
             buttonInformation_FDK.Size = new Size(79, 38);
             buttonInformation_FDK.TabIndex = 18;
@@ -70,31 +70,6 @@
             toolTipButton_FDK.SetToolTip(buttonInformation_FDK, "Показывает кто сделал этот шедевр");
             buttonInformation_FDK.UseVisualStyleBackColor = true;
             buttonInformation_FDK.Click += buttonInformation_FDK_Click;
-            // 
-            // dataGridViewInfo_FDK
-            // 
-            dataGridViewInfo_FDK.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewInfo_FDK.Location = new Point(6, 22);
-            dataGridViewInfo_FDK.Name = "dataGridViewInfo_FDK";
-            dataGridViewInfo_FDK.Size = new Size(890, 284);
-            dataGridViewInfo_FDK.TabIndex = 5;
-            // 
-            // textBoxWriteCountry_FDK
-            // 
-            textBoxWriteCountry_FDK.Location = new Point(289, 27);
-            textBoxWriteCountry_FDK.Name = "textBoxWriteCountry_FDK";
-            textBoxWriteCountry_FDK.Size = new Size(146, 23);
-            textBoxWriteCountry_FDK.TabIndex = 6;
-            // 
-            // groupBoxInPut_FDK
-            // 
-            groupBoxInPut_FDK.Controls.Add(dataGridViewInfo_FDK);
-            groupBoxInPut_FDK.Location = new Point(8, 56);
-            groupBoxInPut_FDK.Name = "groupBoxInPut_FDK";
-            groupBoxInPut_FDK.Size = new Size(907, 321);
-            groupBoxInPut_FDK.TabIndex = 7;
-            groupBoxInPut_FDK.TabStop = false;
-            groupBoxInPut_FDK.Text = "Информация о стране";
             // 
             // buttonAddCountry_FDK
             // 
@@ -129,18 +104,9 @@
             buttonSearch_FDK.UseVisualStyleBackColor = true;
             buttonSearch_FDK.Click += buttonSearch_FDK_Click;
             // 
-            // buttonUpdate_FDK
-            // 
-            buttonUpdate_FDK.Location = new Point(221, 12);
-            buttonUpdate_FDK.Name = "buttonUpdate_FDK";
-            buttonUpdate_FDK.Size = new Size(62, 38);
-            buttonUpdate_FDK.TabIndex = 17;
-            buttonUpdate_FDK.Text = "Стереть всё";
-            buttonUpdate_FDK.UseVisualStyleBackColor = true;
-            // 
             // buttonStatistics_FDK
             // 
-            buttonStatistics_FDK.Location = new Point(540, 12);
+            buttonStatistics_FDK.Location = new Point(590, 12);
             buttonStatistics_FDK.Name = "buttonStatistics_FDK";
             buttonStatistics_FDK.Size = new Size(82, 38);
             buttonStatistics_FDK.TabIndex = 19;
@@ -149,6 +115,43 @@
             buttonStatistics_FDK.UseVisualStyleBackColor = true;
             buttonStatistics_FDK.Click += buttonStatistics_FDK_Click;
             // 
+            // dataGridViewInfo_FDK
+            // 
+            dataGridViewInfo_FDK.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewInfo_FDK.Location = new Point(6, 22);
+            dataGridViewInfo_FDK.Name = "dataGridViewInfo_FDK";
+            dataGridViewInfo_FDK.ReadOnly = true;
+            dataGridViewInfo_FDK.Size = new Size(890, 284);
+            dataGridViewInfo_FDK.TabIndex = 5;
+            // 
+            // textBoxWriteCountry_FDK
+            // 
+            textBoxWriteCountry_FDK.Location = new Point(337, 27);
+            textBoxWriteCountry_FDK.Name = "textBoxWriteCountry_FDK";
+            textBoxWriteCountry_FDK.Size = new Size(146, 23);
+            textBoxWriteCountry_FDK.TabIndex = 6;
+            // 
+            // groupBoxInPut_FDK
+            // 
+            groupBoxInPut_FDK.Controls.Add(dataGridViewInfo_FDK);
+            groupBoxInPut_FDK.Location = new Point(8, 56);
+            groupBoxInPut_FDK.Name = "groupBoxInPut_FDK";
+            groupBoxInPut_FDK.Size = new Size(907, 321);
+            groupBoxInPut_FDK.TabIndex = 7;
+            groupBoxInPut_FDK.TabStop = false;
+            groupBoxInPut_FDK.Text = "Информация о стране";
+            // 
+            // buttonRed_FDK
+            // 
+            buttonRed_FDK.Location = new Point(221, 12);
+            buttonRed_FDK.Name = "buttonRed_FDK";
+            buttonRed_FDK.Size = new Size(99, 38);
+            buttonRed_FDK.TabIndex = 17;
+            buttonRed_FDK.Text = "Редактировать";
+            toolTipButton_FDK.SetToolTip(buttonRed_FDK, "Редактировать таблицу");
+            buttonRed_FDK.UseVisualStyleBackColor = true;
+            buttonRed_FDK.Click += buttonRed_FDK_Click;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -156,7 +159,7 @@
             ClientSize = new Size(916, 376);
             Controls.Add(buttonStatistics_FDK);
             Controls.Add(buttonInformation_FDK);
-            Controls.Add(buttonUpdate_FDK);
+            Controls.Add(buttonRed_FDK);
             Controls.Add(buttonSearch_FDK);
             Controls.Add(buttonDeleteCountry_FDK);
             Controls.Add(buttonAddCountry_FDK);
@@ -189,7 +192,7 @@
         private Button buttonAddCountry_FDK;
         private Button buttonDeleteCountry_FDK;
         private Button buttonSearch_FDK;
-        private Button buttonUpdate_FDK;
+        private Button buttonRed_FDK;
         private Button buttonInformation_FDK;
         private Button buttonStatistics_FDK;
     }
