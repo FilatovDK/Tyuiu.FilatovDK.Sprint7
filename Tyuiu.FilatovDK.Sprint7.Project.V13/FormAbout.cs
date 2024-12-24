@@ -18,7 +18,7 @@ namespace Tyuiu.FilatovDK.Sprint7.Project.V13
         }
         private void buttonOK_FDK_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();//Вызывает метод Close() для текущего окна или формы, в которой находится данный метод это приводит к закрытию формы и завершению её работы
         }
     }
 }
